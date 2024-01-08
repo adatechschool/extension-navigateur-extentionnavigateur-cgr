@@ -5,10 +5,9 @@
     "version": "0.1",
     "browser_action" : {
         "default_icon": {
-            "16": "ada.png",
-            "32": "ada.png",
-            "48": "ada.png",
-            "128": "ada.png"
+            "16": "ada16.png",
+            "24": "ada24.png",
+            "32": "ada32.png"
         }
     }
 }
