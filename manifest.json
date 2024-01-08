@@ -1,0 +1,6 @@
+{
+    "manifest_version": 3,
+    "name": "Nom de l'extension a definir",
+    "description": "Description de l'extension",
+    "version": "0.1"
+}
