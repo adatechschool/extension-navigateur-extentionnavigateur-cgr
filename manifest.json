@@ -1,13 +1,13 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Nom de l'extension a definir",
     "description": "Description de l'extension",
     "version": "0.1",
     "browser_action" : {
         "default_icon": {
-            "16": "/Users/chloegauthier/Code Ada Tech School/projetperso/extensionNavigateurAssets/ada16.png",
-            "24": "/Users/chloegauthier/Code Ada Tech School/projetperso/extensionNavigateurAssets/ada24.png",
-            "32": "/Users/chloegauthier/Code Ada Tech School/projetperso/extensionNavigateurAssets/ada32.png"
+            "16": "images/ada16.png",
+            "24": "images/ada24.png",
+            "32": "images/ada32.png"
         }
     }
 }
