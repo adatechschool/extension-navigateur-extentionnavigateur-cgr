@@ -1,12 +1,12 @@
 {
-    "manifest_version": 2,
-    "name": "Nom de l'extension a definir",
-    "description": "Description de l'extension",
-    "version": "0.1",
-    "browser_action" : {
+    "name": "Nom de l'extension",
+    "description": "My first Extension!",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html",
         "default_icon": {
             "16": "images/ada16.png",
-            "24": "images/ada24.png",
             "32": "images/ada32.png"
         }
     }
