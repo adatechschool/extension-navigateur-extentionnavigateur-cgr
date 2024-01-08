@@ -8,5 +8,9 @@
             "16": "images/ada16.png",
             "32": "images/ada32.png"
         }
+    },
+    "icons": {
+        "16": "images/ada16.png",
+        "32": "images/ada32.png"
     }
 }
