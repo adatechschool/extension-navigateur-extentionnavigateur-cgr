@@ -2,5 +2,13 @@
     "manifest_version": 3,
     "name": "Nom de l'extension a definir",
     "description": "Description de l'extension",
-    "version": "0.1"
+    "version": "0.1",
+    "browser_action" : {
+        "default_icon": {
+            "16": "ada.png",
+            "32": "ada.png",
+            "48": "ada.png",
+            "128": "ada.png"
+        }
+    }
 }
