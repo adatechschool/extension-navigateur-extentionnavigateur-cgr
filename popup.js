@@ -9,7 +9,7 @@ document.getElementById("googleSearch").addEventListener("click", function () {
 document.getElementById("wikipediaSearch").addEventListener("click", function () {
     const query = document.getElementById("searchBox").value;
     if (query) {
-        const wikipediaSearchURL = `https://en.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(query)}`;
+        const wikipediaSearchURL = `https://fr.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(query)}`;
         chrome.tabs.create({ url: wikipediaSearchURL });
     }
 });
