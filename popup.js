@@ -1,15 +1,5 @@
-document.getElementById("googleSearch").addEventListener("click", function () {
-    const query = document.getElementById("searchBox").value;
-    if (query) {
-        const googleSearchURL = `https://www.google.com/search?q=${encodeURIComponent(query)}`;
-        chrome.tabs.create({ url: googleSearchURL });
+fetch(`https://drop-api.ea.com/rating/fc-24?locale=en&offset=0&limit=100&${id}`)
+    .then((response) => response.json())
+    .then((data)) => {
+        const 
     }
-});
-
-document.getElementById("wikipediaSearch").addEventListener("click", function () {
-    const query = document.getElementById("searchBox").value;
-    if (query) {
-        const wikipediaSearchURL = `https://fr.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(query)}`;
-        chrome.tabs.create({ url: wikipediaSearchURL });
-    }
-});

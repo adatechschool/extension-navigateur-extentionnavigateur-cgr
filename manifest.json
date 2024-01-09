@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Extension test recherche Google / Wiki",
+    "name": "Comparateur EA FC 24",
     "version": "1.0",
-    "description": "Cette extension permet de rechercher des choses",
+    "description": "Grâce à cette extension, vous pourrez comparer les joueurs et joueuses sur EA FC 24. Quel Playstyle est utile par rapport à un autre, les prix en direct (en construction), et bien plus !",
     "permissions": [
         "activeTab"
     ],
