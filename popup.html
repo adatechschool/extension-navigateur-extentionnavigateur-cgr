@@ -10,10 +10,12 @@
 
 <body>
     <p>Développée par CGR</p>
-    <div class="search-bar">
-        <input id="playerName" onclick="document.getElementById('playerName').value = ''" type="text"
-            placeholder="Nom du joueur ou de la joueuse">
-        <button id="search">Générer la carte</button>
+    <label for="playerName">Nom du joueur ou de la joueuse :</label>
+    <input type="text" id="playerName" placeholder="Entrez un nom">
+    <button id="search">Rechercher</button>
+    <div id="playerDetails">
+        <!-- Les détails du joueur seront affichés ici -->
+    </div>
         <script src="popup.js"></script>
 </body>
 
