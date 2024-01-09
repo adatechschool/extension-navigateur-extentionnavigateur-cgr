@@ -1,28 +1,24 @@
-const fetchPlayerDetails = () => {
-    const playerNameInput = document.querySelector("#playerName");
-    const playerName = playerNameInput.value.toLowerCase();
+const fetchPlayerDetails = async () => {
+    const playerNameInput = document.querySelector("#playerName").value;
+    const playerName = playerNameInput.toLowerCase();
 
-    fetch(`https://drop-api.ea.com/rating/fc-24?locale=en&offset=0&limit=100&firstName=${playerName}`)
-        .then(response => response.json())
-        .then(playerData => {
-            // Traitez les données du joueur ici
-            console.log(playerData);
+    try {
+        const response = await fetch(`https://drop-api.ea.com/rating/fc-24?locale=en&offset=0&limit=100&firstName=${playerName}`);
+        const playerData = await response.json();
 
-            // Exemple : Afficher les détails du joueur
-            const playerDetails = document.querySelector("#playerDetails");
-            playerDetails.innerHTML = `
-                <h2>${playerData.firstName} ${playerData.lastName}</h2>
-                <p>Position: ${playerData.position.label}</p>
-                <p>Club: ${playerData.team.label}</p>
-                <!-- Ajoutez d'autres détails du joueur selon vos besoins -->
-            `;
-        })
-        .catch(error => {
-            console.error(`Une erreur s'est produite lors de la récupération des données du joueur ${playerName} : `, error);
-            // Afficher un message d'erreur à l'utilisateur si le joueur n'est pas trouvé
-            const playerDetails = document.querySelector("#playerDetails");
-            playerDetails.innerHTML = `<p>Joueur non trouvé</p>`;
-        });
+        // Traitez les données du joueur ici
+        console.log(playerData);
+
+        // Exemple : Afficher les détails du joueur
+        console.log(`${playerData.firstName} ${playerData.lastName}`);
+        console.log(`Position: ${playerData.position.label}`);
+        console.log(`Club: ${playerData.team.label}`);
+        // Ajoutez d'autres détails du joueur selon vos besoins
+    } catch (error) {
+        console.error(`Une erreur s'est produite lors de la récupération des données du joueur ${playerName} : `, error);
+        // Afficher un message d'erreur à l'utilisateur si le joueur n'est pas trouvé
+        console.error('Joueur non trouvé');
+    }
 };
 
 // Ajoutez un gestionnaire d'événements pour le bouton de recherche
