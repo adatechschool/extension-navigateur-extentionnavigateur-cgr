@@ -10,7 +10,10 @@
         "default_popup": "popup.html",
         "default_icon": {
             "16": "images/ada16.png",
-            "32": "images/ada32.png"
+            "24": "images/ada24.png",
+            "32": "images/ada32.png",
+            "48": "images/ada48.png",
+            "128": "images/ada128.png"
         }
     }
 }
