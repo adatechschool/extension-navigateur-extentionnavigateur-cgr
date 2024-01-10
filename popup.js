@@ -19,4 +19,4 @@ const fetchChelseaPlayers = (playerName) => {
 document.getElementById('search').addEventListener('click', () => {
     const playerName = document.getElementById('playerName').value;
     fetchChelseaPlayers(playerName);
-});
+})
