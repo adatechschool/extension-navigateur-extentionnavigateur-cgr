@@ -1,5 +1,5 @@
 const fetchChelseaPlayers = (playerName) => {
-    fetch('https://drop-api.ea.com/rating/fc-24?locale=en&offset=0&limit=100&team=5')
+    fetch('https://drop-api.ea.com/rating/fc-24?locale=en&offset=0')
         .then(response => response.json())
         .then(chelseaPlayersData => {
             const player = chelseaPlayersData.find(player => `${player.firstName} ${player.lastName}`.toLowerCase() === playerName.toLowerCase());
