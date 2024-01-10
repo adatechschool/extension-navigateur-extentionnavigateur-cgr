@@ -8,7 +8,7 @@
     "service_worker": "background.js"
   },
   "action": {
-    "default_popup": "popup.html",
+    "default_popup": "change.html",
     "default_icon": {
       "16": "images/ada16.png",
       "24": "images/ada24.png",

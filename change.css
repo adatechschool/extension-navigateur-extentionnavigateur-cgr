@@ -12,10 +12,13 @@ body {
   color: white;
   padding: 10px;
   font-size: 16px;
-  border: none;
+  border: 3px groove #00fffc;
   cursor: pointer;
-  display: grid;
-  display-items: center;
+}
+
+.dropbtn:hover {
+  transition: all 1s ease-in-out;
+  border-radius: 15%;
 }
 
 .dropdown-content {
