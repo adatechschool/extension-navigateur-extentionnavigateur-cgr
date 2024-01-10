@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Comparateur EA FC 24",
+    "name": "Taux de change monétaire",
     "version": "1.0",
-    "description": "Grâce à cette extension, vous pourrez comparer les joueurs et joueuses sur EA FC 24. Quel Playstyle est utile par rapport à un autre, les prix en direct (en construction), et bien plus !",
+    "description": "Grâce à cette extension, vous pourrez convertir tout montant d'une devise à une autre. Certaines devises sont susceptible de ne pas être disponibles, mais l'extension sera mise à jour régulièrement.",
     "permissions": [
         "activeTab"
     ],
