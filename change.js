@@ -1,3 +1,5 @@
+let valeur = 100;
+
 async function Money(monnaie1, monnaie2) {
     try {
         let response = await fetch(
@@ -5,8 +7,8 @@ async function Money(monnaie1, monnaie2) {
         );
         let data = await response.json();
         let transaction = parseFloat(data.conversion_rate);
-        let caculator = valeur * transaction;
-        console.log(caculator)
+        let calculator = valeur * transaction;
+        console.log(calculator)
     } catch (error) {
         console.error("Une erreur s'est produite : ", error);
     }
