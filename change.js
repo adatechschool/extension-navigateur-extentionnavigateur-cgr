@@ -3,7 +3,7 @@ async function money(monnaie1, monnaie2) {
     console.log(valeur0);
     try {
         let response = await fetch(
-            `https://v6.exchangerate-api.com/v6/47eafb64232b369043e6c27c/pair/${monnaie1}/${monnaie2}`
+            `https://v6.exchangerate-api.com/v6/39ecb2f0add46213f99afb5f/pair/${monnaie1}/${monnaie2}`
         );
         let data = await response.json();
         let transaction = parseFloat(data.conversion_rate);
@@ -18,10 +18,11 @@ async function money(monnaie1, monnaie2) {
 }
 async function money_choice() {
     try {
-        res = await GET('https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/USD')
-        dico = res.conversion_rate
-
-    }catch(error){
+        res = await fetch('https://v6.exchangerate-api.com/v6/39ecb2f0add46213f99afb5f/latest/USD')
+        fullJSON = await res.json();
+        moneyConv = fullJSON["conversion_rates"]
+        dico = Object.keys(moneyConv)
+    } catch (error) {
         console.error("Une erreur s'est produite : ", error);
     }
 }
