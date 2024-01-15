@@ -16,5 +16,14 @@ async function money(monnaie1, monnaie2) {
         console.error("Une erreur s'est produite : ", error);
     }
 }
-function money_choice() {
+async function money_choice() {
+    try {
+        res = await GET('https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/USD')
+        dico = res.conversion_rate
+
+    }catch(error){
+        console.error("Une erreur s'est produite : ", error);
+    }
 }
+
+money_choice()
