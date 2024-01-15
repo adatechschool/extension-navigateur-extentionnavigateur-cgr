@@ -2,36 +2,36 @@
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="change.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="change.css">
 </head>
 
 <body>
-  <div class="input-group">
-    <input type="text" placeholder="Entrez quelque chose">
-    <div class="dropdown">
-        <button class="dropbtn">Options</button>
-        <div class="dropdown-content">
-            <a href="#">Option A</a>
-            <a href="#">Option B</a>
-            <a href="#">Option C</a>
+    <div class="input-group">
+        <input type="text" id="Value" placeholder="Entrez un montant">
+        <div class="dropdown">
+            <button class="dropbtn">Options</button>
+            <div class="dropdown-content">
+                <a href="#">JPY</a>
+                <a href="#">EUR</a>
+                <a href="#">USD</a>
+            </div>
         </div>
+        <button class="submit-btn" onclick="money('JPY','EUR')">Envoyer</button>
     </div>
-    <button class="submit-btn">Envoyer</button>
-</div>
 
-<div class="input-group">
-    <input type="text" placeholder="Résultat" disabled>
-    <div class="dropdown">
-        <button class="dropbtn">Options</button>
-        <div class="dropdown-content">
-            <a href="#">Option 1</a>
-            <a href="#">Option 2</a>
-            <a href="#">Option 3</a>
+    <div class="input-group">
+        <input type="text" id="final" placeholder="Résultat" disabled>
+        <div class="dropdown">
+            <button class="dropbtn">Options</button>
+            <div class="dropdown-content">
+                <a href="#">JPY</a>
+                <a href="#">WON</a>
+                <a href="#">USD</a>
+            </div>
         </div>
     </div>
-</div>
 </body>
 <script src="change.js"></script>
 
