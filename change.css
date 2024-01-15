@@ -1,3 +1,5 @@
+/* change.css */
+
 * {
   margin: 2px;
   padding: 2px;
@@ -5,7 +7,11 @@
 }
 
 /* Reset some default styles for better consistency */
-body, h1, p, input, button {
+body,
+h1,
+p,
+input,
+button {
   margin: 0;
   padding: 0;
 }
@@ -13,21 +19,24 @@ body, h1, p, input, button {
 /* Basic styling for the input group */
 .input-group {
   display: flex;
-  margin: 20px;
+  margin-bottom:40px;
+  position: relative; /* Added this for positioning dropdown relative to input-group */
 }
 
 /* Style for the disabled text input */
 .input-group input[disabled] {
   padding: 10px;
-  width: 250px; /* Choisir la largeur souhaitée */
+  width: 250px;
+  /* Choisir la largeur souhaitée */
   border: 1px solid #ccc;
   border-radius: 5px 0 0 5px;
 }
 
 /* Style for the dropdown container */
 .dropdown {
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  width: 100%;
+  top: 100%; /* Position dropdown below the button */
 }
 
 /* Style for the dropdown button */
@@ -44,9 +53,8 @@ body, h1, p, input, button {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  margin: 20px;
 }
 
 /* Style for dropdown content links */
@@ -70,7 +78,8 @@ body, h1, p, input, button {
 /* Style for the submit button */
 .submit-btn {
   padding: 10px;
-  width: 100px; /* Choisir la largeur souhaitée */
+  width: 100px;
+  /* Choisir la largeur souhaitée */
   background-color: #4CAF50;
   color: #fff;
   border: none;
