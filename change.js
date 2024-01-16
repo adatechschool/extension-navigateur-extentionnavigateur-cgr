@@ -1,5 +1,5 @@
 async function money(monnaie1, monnaie2) {
-    let valeur0 = document.querySelector("#Value").value
+    let valeur0 = document.querySelector("#value1").value
     console.log(valeur0);
     try {
         let response = await fetch(
@@ -11,7 +11,7 @@ async function money(monnaie1, monnaie2) {
         let valeur = parseFloat(valeur0);
         let calculator = parseFloat(valeur * transaction);
         console.log(calculator);
-        document.getElementById("final").value = calculator
+        document.getElementById("value2").value = calculator
     } catch (error) {
         console.error("Une erreur s'est produite : ", error);
     }
