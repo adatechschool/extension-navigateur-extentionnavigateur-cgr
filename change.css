@@ -324,3 +324,14 @@ button {
 }
 
 /* FIN DU BOUTON ENVOYER */
+
+/* PROJET ENTIER */
+
+.project {
+  border: white;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+/* FIN DU PROJET ENTIER */

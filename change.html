@@ -8,32 +8,34 @@
 </head>
 
 <body>
-    <div class="input-group">
-        <div class="dropdown">
-            <button class="dropbtn" role="button">Option</button>
-            <div class="dropdown-content" id="dr">
-                <!-- Contenu inséré dynamiquement par Javascript -->
+    <div class="project">
+        <div class="input-group">
+            <div class="dropdown">
+                <button class="dropbtn" role="button">Option</button>
+                <div class="dropdown-content" id="dr">
+                    <!-- Contenu inséré dynamiquement par Javascript -->
+                </div>
             </div>
+            <input class="input" required type="text" id="value1" placeholder=" ">
+            <label class="label" for="moneyEntry">Entrez un montant</label>
         </div>
-        <input class="input" required type="text" id="value1" placeholder=" ">
-        <label class="label" for="moneyEntry">Entrez un montant</label>
-    </div>
-    <div class="input-group">
-        <div class="dropdown">
-            <button class="dropbtn" role="button">Option</button>
-            <div class="dropdown-content" id="dr">
-                <!-- Contenu inséré dynamiquement par Javascript -->
+        <div class="input-group">
+            <div class="dropdown">
+                <button class="dropbtn" role="button">Option</button>
+                <div class="dropdown-content" id="dr">
+                    <!-- Contenu inséré dynamiquement par Javascript -->
+                </div>
             </div>
+            <input class="input" required type="text" id="value2" disabled>
         </div>
-        <input class="input" required type="text" id="value2" disabled>
+        <button class="submitbtn" role="button" onclick="sendMoney('JPY','EUR')">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text">
+                Envoyer
+            </span>
+        </button>
     </div>
-    <button class="submitbtn" role="button" onclick="sendMoney('JPY','EUR')">
-        <span class="button-82-shadow"></span>
-        <span class="button-82-edge"></span>
-        <span class="button-82-front text">
-            Envoyer
-        </span>
-    </button>
     <script src="change.js"></script>
 </body>
 
