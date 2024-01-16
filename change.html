@@ -11,31 +11,27 @@
     <div class="input-group">
         <div class="dropdown">
             <button class="dropbtn" role="button">Option</button>
-            <div class="dropdown-content">
-                <input type="radio" name="monnaie1">
+            <div class="dropdown-content" id="dr">
+                <!-- Contenu inséré dynamiquement par Javascript -->
             </div>
         </div>
         <input class="input" required type="text" id="value1" placeholder=" ">
         <label class="label" for="moneyEntry">Entrez un montant</label>
     </div>
-
     <div class="input-group">
         <div class="dropdown">
             <button class="dropbtn">
                 <span>Option</span>
                 <i class="bi bi-chevron-down"></i>
             </button>
-            <div class="dropdown-content">
-                <input type="radio" name="monnaie2">
+            <div class="dropdown-content" id="dr">
+                <!-- Contenu inséré dynamiquement par Javascript -->
             </div>
         </div>
 
         <input class="input" required type="text" id="value2" disabled>
         <button class="submit-btn" onclick="sendMoney('JPY','EUR')">Envoyer</button>
     </div>
-
-
-
     <script src="change.js"></script>
 </body>
 
