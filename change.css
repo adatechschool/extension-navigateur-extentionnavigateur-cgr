@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 body,
 h1,
 p,
@@ -13,8 +17,17 @@ button {
   padding: 0;
 }
 
+button {
+  border: 0;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
 .input-group {
   display: flex;
+  align-self: stretch;
   margin-bottom: 40px;
   position: relative;
 }
@@ -27,15 +40,24 @@ button {
 }
 
 .dropdown {
+  position: relative;
+  padding: 21px;
   display: flex;
   align-items: center;
 }
 
 .dropbtn {
-  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 100%;
   margin: -4px;
   border: #ccc;
   border-radius: 0 5px 5px 0;
+}
+
+.dropbtn span {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .dropdown-content {
@@ -109,6 +131,37 @@ button {
 
 .input-group input[disabled]:placeholder-shown+.label {
   transform: translateY(0) scale(1);
+}
+
+.dropdown:hover {
+  background-color: pink;
+  cursor: pointer;
+}
+
+.dropbtn i {
+  font-size: 14px;
+}
+
+.dropdown:hover>.dropdown-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  background-color: #202124;
+  display: none;
+}
+
+.dropdown-content button {
+  padding: 12px 24px;
+}
+
+.dropdown-content button:hover {
+  background-color: blue;
 }
 
 /* Pour les mobiles */
