@@ -9,28 +9,31 @@
 
 <body>
     <div class="input-group">
-        <input class="input" required type="text" id="username">
-        <label class="label" for="username">Username</label>
         <div class="dropdown dropdown-1">
-                  <button class="dropbtn">Options</button>
-                  <div class="dropdown-content">
-                      <input type="radio" name="monnaie1"></a>
-                  </div>
-              </div>
-      </div>
-      
-      <div class="input-group">
-        <input class="input" required type="text" id="username" disabled>
-        <label class="label" for="username">Username</label>
+            <button class="dropbtn">Options</button>
+            <div class="dropdown-content">
+                <input type="radio" name="monnaie1"></a>
+            </div>
+        </div>
+        <input class="input" required type="text" id="entryMoney" placeholder=" ">
+<label class="label" for="moneyEntry">Entrez un montant</label>
+
+    </div>
+
+    <div class="input-group">
         <div class="dropdown dropdown-1">
-                  <button class="dropbtn">Options</button>
-                  <div class="dropdown-content">
-                      <input type="radio" name="monnaie1"></a>
-                  </div>
-              </div>
-      <button class="submit-btn" onclick="money('JPY','EUR')">Envoyer</button>
-      </div>
+            <button class="dropbtn">Options</button>
+            <div class="dropdown-content">
+                <input type="radio" name="monnaie1"></a>
+            </div>
+        </div>
+        <input class="input" required type="text" id="outMoney" disabled>
+        <label class="label" for="moneyOut">Monnaie convertie</label>
+    </div>
+
+    <button class="submit-btn" onclick="money('JPY','EUR')">Envoyer</button>
+
+    <script src="change.js"></script>
 </body>
-<script src="change.js"></script>
 
 </html>
