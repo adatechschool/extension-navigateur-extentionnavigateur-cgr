@@ -1,4 +1,4 @@
-async function money(monnaie1, monnaie2) {
+async function sendMoney(monnaie1, monnaie2) {
     let valeur0 = document.querySelector("#value1").value
     console.log(valeur0);
     try {

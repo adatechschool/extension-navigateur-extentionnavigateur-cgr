@@ -20,18 +20,20 @@
     </div>
     <div class="input-group">
         <div class="dropdown">
-            <button class="dropbtn">
-                <span>Option</span>
-                <i class="bi bi-chevron-down"></i>
-            </button>
+            <button class="dropbtn" role="button">Option</button>
             <div class="dropdown-content" id="dr">
                 <!-- Contenu inséré dynamiquement par Javascript -->
             </div>
         </div>
-
         <input class="input" required type="text" id="value2" disabled>
-        <button class="submit-btn" onclick="sendMoney('JPY','EUR')">Envoyer</button>
     </div>
+    <button class="submitbtn" role="button" onclick="sendMoney('JPY','EUR')">
+        <span class="button-82-shadow"></span>
+        <span class="button-82-edge"></span>
+        <span class="button-82-front text">
+            Envoyer
+        </span>
+    </button>
     <script src="change.js"></script>
 </body>
 
