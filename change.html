@@ -10,10 +10,7 @@
 <body>
     <div class="input-group">
         <div class="dropdown">
-            <button class="dropbtn">
-                <span>Option</span>
-                <i class="bi bi-chevron-down"></i>
-            </button>
+            <button class="dropbtn" role="button">Option</button>
             <div class="dropdown-content">
                 <input type="radio" name="monnaie1">
             </div>
@@ -34,10 +31,10 @@
         </div>
 
         <input class="input" required type="text" id="value2" disabled>
-        <label class="label" for="moneyOut">Monnaie convertie</label>
+        <button class="submit-btn" onclick="sendMoney('JPY','EUR')">Envoyer</button>
     </div>
 
-    <button class="submit-btn" onclick="sendMoney('JPY','EUR')">Envoyer</button>
+
 
     <script src="change.js"></script>
 </body>

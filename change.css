@@ -41,23 +41,9 @@ button {
 
 .dropdown {
   position: relative;
-  padding: 21px;
+  padding: 2px;
   display: flex;
   align-items: center;
-}
-
-.dropbtn {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  margin: -4px;
-  border: #ccc;
-  border-radius: 0 5px 5px 0;
-}
-
-.dropbtn span {
-  font-size: 16px;
-  font-weight: 500;
 }
 
 .dropdown-content {
@@ -65,7 +51,7 @@ button {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px grey;
   z-index: 1;
 }
 
@@ -73,7 +59,7 @@ button {
   padding: 12px 16px;
   display: block;
   text-decoration: none;
-  color: #333;
+  color: grey;
 }
 
 .dropdown-content a:hover {
@@ -134,7 +120,6 @@ button {
 }
 
 .dropdown:hover {
-  background-color: pink;
   cursor: pointer;
 }
 
@@ -162,6 +147,52 @@ button {
 
 .dropdown-content button:hover {
   background-color: blue;
+}
+
+.dropbtn {
+  background-image: linear-gradient(#42A1EC, #0070C9);
+  border: 1px solid #0077CC;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  direction: ltr;
+  display: block;
+  font-family: "SF Pro Text","SF Pro Icons","AOS Icons","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: -.022em;
+  line-height: 1.47059;
+  min-width: 30px;
+  overflow: visible;
+  padding: 4px 15px;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+}
+
+.dropbtn:disabled {
+  cursor: default;
+  opacity: .3;
+}
+
+.dropbtn:hover {
+  background-image: linear-gradient(#51A9EE, #147BCD);
+  border-color: #1482D0;
+  text-decoration: none;
+}
+
+.dropbtn:active {
+  background-image: linear-gradient(#3D94D9, #0067B9);
+  border-color: #006DBC;
+  outline: none;
+}
+
+.dropbtn:focus {
+  box-shadow: rgba(131, 192, 253, 0.5) 0 0 0 3px;
+  outline: none;
 }
 
 /* Pour les mobiles */
