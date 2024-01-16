@@ -91,7 +91,7 @@ button {
 .label {
   position: absolute;
   top: 1rem;
-  left: 1rem;
+  left: 7rem;
   color: #d4d4d4;
   pointer-events: none;
   transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -107,7 +107,7 @@ button {
   color: var(--primary);
 }
 
-.input-group input[disabled]:placeholder-shown + .label {
+.input-group input[disabled]:placeholder-shown+.label {
   transform: translateY(0) scale(1);
 }
 
