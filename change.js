@@ -1,3 +1,48 @@
+/* Maintenir les éléments dans le Dropdown DEBUT
+
+const dropdown1 = document.getElementById('dr');
+const dropdown2 = document.getElementById('dr1');
+
+// Fonction pour récupérer les options depuis une API
+async function fetchOptions(apiEndpoint, dropdownElement) {
+  try {
+    const response = await fetch(apiEndpoint);
+    const data = await response.json();
+
+    // Efface le contenu actuel du dropdown
+    dropdownElement.innerHTML = '';
+
+    // Remplit le dropdown avec les nouvelles options
+    data.forEach(option => {
+      const item = document.createElement('div');
+      item.textContent = option.name; // Assurez-vous d'adapter cela en fonction de la structure de votre API
+      dropdownElement.appendChild(item);
+    });
+  } catch (error) {
+    console.error('Erreur lors de la récupération des options :', error);
+  }
+}
+
+// Fonction pour remplir le premier dropdown depuis l'API
+async function populateDropdown1() {
+  const apiEndpoint1 = 'URL_DE_VOTRE_API_1'; // Remplacez cela par l'URL de votre première API
+  fetchOptions(apiEndpoint1, dropdown1);
+}
+
+// Fonction pour remplir le deuxième dropdown depuis l'API
+async function populateDropdown2() {
+  const apiEndpoint2 = 'URL_DE_VOTRE_API_2'; // Remplacez cela par l'URL de votre deuxième API
+  fetchOptions(apiEndpoint2, dropdown2);
+}
+
+populateDropdown1();
+populateDropdown2();
+
+// ... (le reste du script reste inchangé)
+
+
+Maintenir les éléments dans le Dropdown FIN */
+
 async function sendMoney(monnaie1, monnaie2) {
     let valeur0 = document.querySelector("#value1").value
     console.log(valeur0);
