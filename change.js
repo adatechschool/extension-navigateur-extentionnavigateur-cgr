@@ -1,4 +1,4 @@
-async function money(monnaie1, monnaie2) {
+async function sendMoney(monnaie1, monnaie2) {
     let valeur0 = document.querySelector("#value1").value
     console.log(valeur0);
     try {
@@ -38,11 +38,11 @@ async function testasync() {
             let divElement = document.createElement("div");
             let divElement1 = document.createElement("div1");
             divElement.innerHTML = `
-            <input type="radio" id="${résu[i]}" name="drone" value="${résu[i]}" checked />
+            <input type="radio" id="${résu[i]}" name="Money1" value="${résu[i]}" />
             <label for="${résu[i]}">${résu[i]}</label>
         `;
             divElement1.innerHTML = `
-            <input type="radio" id="${résu[i]}" name="drone" value="${résu[i]}" checked />
+            <input type="radio" id="${résu[i]}" name="Money" value="${résu[i]}" />
             <label for="${résu[i]}">${résu[i]}</label>
         `;
             document.getElementById("dr").appendChild(divElement);
@@ -51,5 +51,9 @@ async function testasync() {
     } catch (error) {
         console.error("Une erreur s'est produite : ", error);
     }
+}
+
+function monnaie_select(){
+    
 }
 testasync()
