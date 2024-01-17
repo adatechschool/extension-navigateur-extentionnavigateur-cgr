@@ -30,6 +30,8 @@ button {
   align-self: stretch;
   margin-bottom: 40px;
   position: relative;
+  font-size: 1.25rem;
+  --primary: #2196f3;
 }
 
 .input-group input[disabled] {
