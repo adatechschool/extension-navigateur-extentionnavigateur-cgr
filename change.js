@@ -53,7 +53,7 @@ async function testasync() {
     }
 }
 
-function monnaie_select(){
-    
+function monnaie_select() {
+
 }
 testasync()
