@@ -10,7 +10,7 @@
 <body>
     <div class="project">
         <div class="input-group">
-            <div class="dropdown">
+            <div class="dropdown" id = "drp1">
                 <button class="dropbtn" role="button">Option</button>
                 <div class="dropdown-content" id="dr">
                     <!-- Contenu inséré dynamiquement par Javascript -->
@@ -20,15 +20,16 @@
             <label class="label" for="moneyEntry">Entrez un montant</label>
         </div>
         <div class="input-group">
-            <div class="dropdown">
+            <div class="dropdown" id="drp2">
                 <button class="dropbtn" role="button">Option</button>
                 <div class="dropdown-content" id="dr1">
                     <!-- Contenu qui est inséré dynamiquement par Javascript -->
                 </div>
             </div>
+            
             <input class="input" required type="text" id="value2" disabled>
         </div>
-        <button class="submitbtn" role="button" onclick="sendMoney(Money1,Money)">
+        <button class="submitbtn" role="button" id ="send">
             <span class="button-82-shadow"></span>
             <span class="button-82-edge"></span>
             <span class="button-82-front text">

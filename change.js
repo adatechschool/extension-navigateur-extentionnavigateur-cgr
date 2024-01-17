@@ -1,3 +1,4 @@
+testasync()
 async function sendMoney(monnaie1, monnaie2) {
     let valeur0 = document.querySelector("#value1").value
     console.log(valeur0);
@@ -42,7 +43,7 @@ async function testasync() {
             <label for="${résu[i]}">${résu[i]}</label>
         `;
             divElement1.innerHTML = `
-            <input type="radio" id="${résu[i]}" name="Money" value="${résu[i]}" />
+            <input type="radio" id="${résu[i]}" name="Money2" value="${résu[i]}" />
             <label for="${résu[i]}">${résu[i]}</label>
         `;
             document.getElementById("dr").appendChild(divElement);
@@ -54,6 +55,12 @@ async function testasync() {
 }
 
 function monnaie_select(){
-    
+butt = document.getElementById("send")
+butt.onclick = function(){
+    let M1 =  document.querySelector('input[name="Money1"]:checked').value;
+    let M2 = document.querySelector('input[name="Money2"]:checked').value;
+    sendMoney(M1,M2)
 }
-testasync()
+
+};
+monnaie_select()
