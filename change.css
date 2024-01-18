@@ -319,13 +319,17 @@ button {
 
 /* FIN DU BOUTON ENVOYER */
 
-/* CSS pour la div taux
+/* CSS pour la div taux */
 
 #taux {
-  
+  border: #1482D0;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-Fin de CSS pour la div taux */
+/* Fin de CSS pour la div taux */
 
 /* PROJET ENTIER */
 

@@ -10,7 +10,7 @@ async function sendMoney(monnaie1, monnaie2) {
         let transaction = parseFloat(data.conversion_rate);
         let valeur = parseFloat(valeur0);
         let T = document.getElementById("taux");
-        T.textContent = `Le taux de change est : ${transaction}`
+        T.textContent = `Le taux de change est de ${transaction}`
         let calculator = parseFloat(valeur * transaction);
         console.log(calculator);
         document.getElementById("value2").value = calculator
